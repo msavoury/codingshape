@@ -16,7 +16,11 @@ Route::get('/', function () {
 });
 
 Route::get('/workout', function() {
-    return view('partials.workout');//'beginning workout';
+    return view('partials.workout');
 });
 
+
+Route::get('/bootstrap', function() {
+    return view('bootstrap');
+});
 
