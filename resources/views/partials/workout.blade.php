@@ -5,6 +5,7 @@
   <div class="col-lg-6 col-lg-offset-3 text-center" style="min-height:200px">
     <div class="flash-content">
 	Content of the question goes here
+    [[test]]
     </div>
   </div>
 </div>

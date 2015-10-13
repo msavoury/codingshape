@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/assets/css/bootstrap.css" media="screen">
     <link rel="stylesheet" href="/assets/css/custom.css" media="screen">
   </head>
-  <body>
+  <body ng-app="codingshape" ng-controller="cardController">
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -39,5 +39,7 @@
     </div>
     <script src="/assets/js/lib/jquery-2.1.4.min.js"></script>
     <script src="/assets/js/lib/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js"> </script>
+    <script src="/assets/js/codingshape.js"></script>
 </body>
 </html>
