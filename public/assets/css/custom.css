@@ -1,3 +1,13 @@
 body {
     margin-top:60px;
 }
+
+.flash-content {
+    margin-top: 30px;
+    font-size:26px;
+}
+
+/**Bootstrap overrides*/
+.btn {
+    font-size: 14px;
+}
