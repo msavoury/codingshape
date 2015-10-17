@@ -15,10 +15,7 @@ Route::get('/', function () {
     return view('partials.index');
 });
 
-Route::get('/workout', function() {
-    return view('partials.workout');
-});
-
+Route::get('/workout', 'WorkoutController@index');
 
 Route::get('/bootstrap', function() {
     return view('bootstrap');

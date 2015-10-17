@@ -2,8 +2,8 @@
 
 @section('content')
 <div class="row">
-  <div class="col-lg-6 col-lg-offset-3 text-center" style="min-height:200px">
-    <div class="flash-content">
+  <div class="col-lg-8 col-lg-offset-2 text-center" style="border-radius:10px;min-height:200px;margin-top: 10px; margin-bottom:10px;background-color:#f8f5f0">
+    <div class="flash-content" >
         [[currentCard()]]
     </div>
   </div>
@@ -15,4 +15,7 @@
         <button class="btn btn-primary btn-lg" ng-click="nextCard()">Next</button>
   </div>
 </div>
+<script>
+ var cards = <?php echo $cards ?>;
+</script>
 @stop

@@ -24,6 +24,7 @@ app.factory('cardService', function() {
                 },
 
             ];
+            if (typeof cards != "undefined") return cards;
             return arr;
         },
     };
