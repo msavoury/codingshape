@@ -21,6 +21,7 @@ class WorkoutController extends Controller
             unset($item->fields->tags);
             $result[] = $item->fields;
         }
+        shuffle($result);
         $jsonData = json_encode($result);
         return view('partials.workout')->with('cards', $jsonData);
     }
