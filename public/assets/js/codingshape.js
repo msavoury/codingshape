@@ -5,27 +5,50 @@ var app = angular.module('codingshape', [], function($interpolateProvider) {
 app.factory('cardService', function() {
     var cardService = {
         getCards:function() {
+            var arr = [
+                {
+                    "front":"first-front",
+                    "back":"first-back",
+                },
+                {
+                    "front":"second-front",
+                    "back":"second-back",
+                },
+                {
+                    "front":"third-front",
+                    "back":"third-back",
+                },
+                {
+                    "front":"fourth-front",
+                    "back":"fourth-back",
+                },
 
+            ];
+            return arr;
         },
     };
     return cardService;
 })
-app.controller('cardController', ['$scope', function($scope) {
+app.controller('cardController', ['$scope', 'cardService', function($scope, cardService) {
     $scope.test = 'hello';
-    /*
+    $scope.cards = cardService.getCards();
+    $scope.cardIndex = 0;
+    $scope.currentCardPosition = "front";
+    $scope.currentCard = function() { return $scope.cards[$scope.cardIndex][$scope.currentCardPosition] ;}
 
-       //setup goes here. get cards from the service
-       //vars
-       // - current index in array of cards
-       // - card state: front or back
-       //
-       // card json structure
-       // { front:"front", back:"back"}
+    $scope.nextCard = function() {
+        $scope.cardIndex = ($scope.cardIndex + 1) % $scope.cards.length;
+        $scope.currentCardPosition = "front";
+    };
 
+    $scope.previousCard = function() {
+        $scope.cardIndex = $scope.cardIndex - 1;
+        if ($scope.cardIndex < 0) $scope.cardIndex = $scope.cards.length - 1;
+        $scope.currentCardPosition = "front";
+    };
 
-     */
-    //next btn fn
-    //prv btn fn
-    //flip btn fn
+    $scope.flipCard = function() {
+        $scope.currentCardPosition = $scope.currentCardPosition == "front" ? "back" : "front";
+    }
 
 }]);
