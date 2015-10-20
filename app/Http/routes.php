@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('partials.index');
-});
+Route::get('/', 'WorkoutController@home');
 
 Route::get('/workout', 'WorkoutController@index');
 

@@ -35,7 +35,14 @@ app.controller('cardController', ['$scope', 'cardService', function($scope, card
     $scope.cards = cardService.getCards();
     $scope.cardIndex = 0;
     $scope.currentCardPosition = "front";
-    $scope.currentCard = function() { return $scope.cards[$scope.cardIndex][$scope.currentCardPosition] ;}
+    $scope.currentCard = function() {
+        if ($scope.cards.length > 0) {
+            return $scope.cards[$scope.cardIndex][$scope.currentCardPosition] ;
+        }
+        else {
+            return null;
+        }
+    }
 
     $scope.nextCard = function() {
         $scope.cardIndex = ($scope.cardIndex + 1) % $scope.cards.length;
