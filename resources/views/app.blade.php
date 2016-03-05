@@ -21,7 +21,11 @@
         </div>
         <div class="navbar-collapse collapse" id="navbar-main">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="">Built With </a></li>
+            <li>
+                <a href="">Built With
+                <img height="20" src="/assets/img/angularjs.png">
+                </a>
+            </li>
             <li><a id="about" data-toggle="modal" data-target="#aboutModal" href="">about</a></li>
           </ul>
 

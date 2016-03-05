@@ -17,8 +17,8 @@
           </div>
           <div class="text-center">
             @foreach($tags as $tag => $value)
-                <label class="btn btn-default">
-                    <input class="" type="checkbox" name="tag[]" value="{{$value}}" /> {{$tag}}
+                <label class="btn btn-default" >
+                    <input type="checkbox" name="tag[]" value="{{$value}}" /> {{$tag}}
                 </label>
             @endforeach
           </div>
