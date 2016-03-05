@@ -4,7 +4,7 @@
 <div class="row">
   <div class="col-lg-8 col-lg-offset-2 text-center" style="border-radius:10px;min-height:200px;margin-top: 10px; margin-bottom:10px;background-color:#f8f5f0">
     <div class="flash-content">
-        <div ng-if="currentCard() != null">
+        <div ng-bind-html="currentCard()" ng-if="currentCard() != null">
         [[currentCard()]]
         </div>
         <div ng-if="currentCard() == null">No cards match the given criteria</div>

@@ -39,7 +39,8 @@
     </div>
     <script src="/assets/js/lib/jquery-2.1.4.min.js"></script>
     <script src="/assets/js/lib/bootstrap.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js"> </script>
+    <script src="/assets/js/lib/angular-1.4.5.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-sanitize.min.js"></script>
     <script src="/assets/js/codingshape.js"></script>
 </body>
 </html>
